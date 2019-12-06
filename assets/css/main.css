@@ -4367,4 +4367,129 @@ input, select, textarea {
 		width: 50px;
 		height: 50px;
 		text-align: center;
-  	}
+		}
+
+/* Music */
+
+.music {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+	.music li {
+		padding: 4em 4em 2em 6em ;
+		display: block;
+		position: relative;
+		text-align: left;
+		width: 50%;
+	}
+
+		.music li:nth-child(1) {
+			background-color: rgba(200, 165, 247, 0.2);
+		}
+
+		.music li:nth-child(2) {
+			background-color: rgba(143, 229, 255, 0.2);
+		}
+
+		.music li:nth-child(3) {
+			background-color: rgba(255, 176, 176, 0.2);
+		}
+
+		.music li:nth-child(4) {
+			background-color: rgba(190, 252, 177, 0.2);
+		}
+
+		.music li:nth-child(5) {
+			background-color: rgba(255, 244, 212, 0.2);
+		}
+
+		.music li:nth-child(6) {
+			background-color: rgba(184, 255, 237, 0.2);
+		}
+
+		.music li:nth-child(7) {
+			background-color: rgba(66, 66, 66, 0.2);
+		}
+
+		.music li:nth-child(8) {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+		.music li:nth-child(9) {
+			background-color: rgba(246, 147, 255, 0.2);
+		}
+
+		.music li:nth-child(10) {
+			background-color: rgba(162, 255, 204, 0.35);
+		}
+
+		.music li:before {
+			display: block;
+			color: #00ffcc;
+			position: absolute;
+			left: 1.75em;
+			top: 2.75em;
+			font-size: 1.5em;
+		}
+
+		.music li:nth-child(1) {
+			border-top-left-radius: 3px;
+		}
+
+		.music li:nth-child(2) {
+			border-top-right-radius: 3px;
+		}
+
+		.music li:nth-last-child(1) {
+			border-bottom-right-radius: 3px;
+		}
+
+		.music li:nth-last-child(2) {
+			border-bottom-left-radius: 3px;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.music li {
+				padding: 3em 2em 1em 2em ;
+				text-align: center;
+			}
+
+				.music li:before {
+					left: 0;
+					margin: 0 0 1em 0;
+					position: relative;
+					top: 0;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.music li {
+				padding: 3em 0 1em 0 ;
+				background-color: transparent !important;
+				border-top: solid 2px #fff;
+				width: 100%;
+			}
+
+				.music li:first-child {
+					border-top: 0;
+				}
+
+		}
