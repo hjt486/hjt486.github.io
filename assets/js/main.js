@@ -4,6 +4,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	// Tabs.
+/* 	function openTab(tabname) {
+		var i;
+		var x = document.getElementsByClassName("tab");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		document.getElementById(tabname).style.display = "block";
+	} */
+
+	function openTab(evt, tabname) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("tab");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" primary", "");
+		}
+		document.getElementById(tabname).style.display = "block";
+		evt.currentTarget.className += " primary";
+	}
+
 (function($) {
 
 	var	$window = $(window),

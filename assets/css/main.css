@@ -2978,6 +2978,11 @@ input, select, textarea {
 		.wrapper.style2 {
 			background-color: #2e3842;
 		}
+			.wrapper.style2 .span {
+			font-size: 12px;
+			padding: 0px 0;
+			display: block;
+  		}
 
 		.wrapper.style3 {
 			background-color: #505393;
@@ -3453,6 +3458,23 @@ input, select, textarea {
 					}
 
 			.wrapper.style7 {
+				height: 95vh;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-moz-justify-content: center;
+				-webkit-justify-content: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				cursor: default;
+				min-height: 35em;
+				overflow: hidden;
+				position: relative;
 				background-color: #b6b6b6;
 				color: #fcfcfc;
 			}
@@ -3919,9 +3941,9 @@ input, select, textarea {
 		opacity: 1;
 	}
 
-/* CTA */
+/* moreinfo */
 
-	#cta .inner {
+	#moreinfo .inner {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3929,7 +3951,7 @@ input, select, textarea {
 		max-width: 45em;
 	}
 
-		#cta .inner header {
+		#moreinfo .inner header {
 			-moz-order: 1;
 			-webkit-order: 1;
 			-ms-order: 1;
@@ -3938,11 +3960,11 @@ input, select, textarea {
 			width: 70%;
 		}
 
-			#cta .inner header p {
+			#moreinfo .inner header p {
 				color: inherit;
 			}
 
-		#cta .inner .actions {
+		#moreinfo .inner .actions {
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
@@ -3952,17 +3974,17 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#cta .inner {
+			#moreinfo .inner {
 				display: block;
 				text-align: center;
 			}
 
-				#cta .inner header {
+				#moreinfo .inner header {
 					padding-right: 0;
 					width: 100%;
 				}
 
-				#cta .inner .actions {
+				#moreinfo .inner .actions {
 					margin-left: auto;
 					margin-right: auto;
 					max-width: 20em;
@@ -3973,7 +3995,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#cta .inner .actions {
+			#moreinfo .inner .actions {
 				max-width: none;
 			}
 
