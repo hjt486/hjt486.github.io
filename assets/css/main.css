@@ -2525,7 +2525,7 @@ input, select, textarea {
 			display: none;
 		}
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 700px) {
 
 			input[type="submit"],
 			input[type="reset"],
@@ -2534,7 +2534,7 @@ input, select, textarea {
 			.button {
 				height: 3.75em;
 				line-height: 3.75em;
-				padding: 0 1.75em;
+				padding: 0 1.1em;
 			}
 				.button .button-label {
 					display: none;
@@ -2543,6 +2543,7 @@ input, select, textarea {
 				.button .icon {
 					display: inline;
 					font-size: 2em;
+					align-content: center;
 				}
 
 		}
